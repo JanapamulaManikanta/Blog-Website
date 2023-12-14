@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+            font-size: 28px;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            border-color: #28a745;
+            padding: 10px 20px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-show-blogs {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 10px 20px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-show-blogs:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .form-control {
+            border-radius: 8px;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Add Blog</h1>
+            </div>
+
+            <form>
+                <div class="mb-3 form-group">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="fname">
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lname">
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="blogTitle" class="form-label">Blog Title</label>
+                    <input type="text" class="form-control" id="blogTitle" name="title">
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="imageLinks" class="form-label">Images Links</label>
+                    <input type="text" class="form-control mb-2" id="imageLinks1" name="image1" placeholder="Link-1">
+                    <input type="text" class="form-control mb-2" id="imageLinks2" name="image2" placeholder="Link-2">
+                    <input type="text" class="form-control mb-2" id="imageLinks3" name="image3" placeholder="Link-3">
+                    <input type="text" class="form-control mb-2" id="imageLinks4" name="image4" placeholder="Link-4">
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+                <div class="mb-3 form-group">
+                    <label for="blogInfo" class="form-label">Blog Information</label>
+                    <textarea class="form-control" id="blogInfo" rows="4" name="content"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom btn-block">Create Blog</button>
+            </form>
+
+            <div class="link-container">
+                <a href="/show-blogs" class="btn btn-show-blogs">Show Blogs</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
